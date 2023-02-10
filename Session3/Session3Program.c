@@ -23,7 +23,7 @@ int main(int argc, char* argv[]){
   long max_lint = 0x7FFFFFFF;           /* write the maximum long  int in hexadecimal representation */ 
   unsigned int max_uint = 0xffffffff;           /* write the usigned max int in hexadecimal notation */
   unsigned short max_usint = 0xffff;            /* write the unsigned max short int in hexadecimal notation */
-  unsigned long max_ulint = 0xffffffffffffffff; /* write the unsigned max long int in hexadecimal notation */
+  unsigned long max_ulint = 0xffffffff; /* write the unsigned max long int in hexadecimal notation */
   
   printf("max int is %d\n", max_int);
   printf("min int is %d\n", min_int);
