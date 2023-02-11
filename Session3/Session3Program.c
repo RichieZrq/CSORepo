@@ -19,11 +19,12 @@ int main(int argc, char* argv[]){
   int min_int = 0x80000000;                /* write the min int in hexadecimal representation*/
   short min_sint = 0x8000;                /* write the minimum short int in hexadecimal representation */
   short max_sint = 0x7FFF;                /* write the maximum short int in hexadecimal representation */
-  long min_lint = -0x80000000;      /* write the minimum long int in hexadecimal representation */
-  long max_lint = 0x7FFFFFFF;           /* write the maximum long  int in hexadecimal representation */ 
+  long min_lint = -0x8000000000000000;      /* write the minimum long int in hexadecimal representation */
+  long max_lint = 0x7FFFFFFFFFFFFFFF;           /* write the maximum long  int in hexadecimal representation */
   unsigned int max_uint = 0xffffffff;           /* write the usigned max int in hexadecimal notation */
   unsigned short max_usint = 0xffff;            /* write the unsigned max short int in hexadecimal notation */
-  unsigned long max_ulint = 0xffffffff; /* write the unsigned max long int in hexadecimal notation */
+  unsigned long max_ulint = 0xFFFFFFFFFFFFFFFF; /* write the unsigned max long int in hexadecimal notation */
+
   
   printf("max int is %d\n", max_int);
   printf("min int is %d\n", min_int);
