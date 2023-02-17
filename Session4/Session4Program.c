@@ -1,18 +1,3 @@
-/*
- *   The following concepts are emphasized here
- *   1. command line arguments including processing options
- *   2. reading files
- *   3. inserting in order
- *
- *   Compile: "gcc -ansi -Wall -pedantic -std=c99 Session4Program.c -o Session4Program"
- *   Run without sorting: "./Session4Program input.txt"
- *   Run with sorting: "./Session4Program -s input.txt"
- *
- *   Tasks:
- *   (1) add the case in the main to enable sorting
- *   (2) fix the bug in insertInorder so that the function sorts properly
- **/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,7 +19,7 @@ int main(int argc, char* argv[]){
     case 1 : return EXIT_FAILURE;
     case 2 : readFile(argv[1], A, false);
            break;
-    case 3 :
+    case 3 : readFile(argv[2], A, true);
            break;
     default: return EXIT_FAILURE;
   }
@@ -73,5 +58,4 @@ void printArray(int A[]){
   for (int i=0; i<next; i++)
     printf("%d ",A[i]);
   printf("\n");
-
 }
