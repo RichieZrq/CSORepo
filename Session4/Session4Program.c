@@ -61,8 +61,10 @@ int readFile(char* fname, int A[], int flag){
 int insertInOrder(int A[], int value){
   int j=next-1;
   while (j>=0 && A[j]>value)
-    {A[j+1] = A[j];j--;}
-  A[j] = value;
+    {A[j+1] = A[j];
+    j--;
+  }
+  A[j+1] = value;
   next++;
   return EXIT_SUCCESS;
 } 
